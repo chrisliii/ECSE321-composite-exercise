@@ -21,7 +21,9 @@ public class Directory implements Component {
 		String rtn = name;
 		
 		for (Component comp : children) {
-			rtn += System.lineSeparator() + comp.ls(); 
+			if (comp.ls()!=null) {
+				rtn += System.lineSeparator() + comp.ls(); 
+			}
 		}
 		
 		return rtn;

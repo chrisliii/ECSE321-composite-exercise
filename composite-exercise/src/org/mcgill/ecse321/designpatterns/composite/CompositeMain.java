@@ -8,9 +8,9 @@ public class CompositeMain {
 		Directory photos = new Directory("PHOTOS");
 		Directory shanghai = new Directory("SHANGHAI");
 		Directory kyoto = new Directory("KYOTO");
-		File opt = new File("Oriental Pearl Tower");
+		HiddenFile opt = new HiddenFile("Oriental Pearl Tower");
 		File bund = new File("The Bund");
-		File kiyomizu = new File("Kiyomizu Dera");
+		HiddenFile kiyomizu = new HiddenFile("Kiyomizu Dera");
 		
 		shanghai.add(opt);
 		shanghai.add(bund);
